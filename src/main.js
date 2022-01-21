@@ -1,8 +1,8 @@
-import animateTitle from './features/animateTitle'
-import createBadge from './features/createBasge'
-import './styles/style.css'
+const box = document.querySelector('.box')
 
-console.log('Welcome to Vite + JS + Webflow!')
-
-createBadge()
-animateTitle()
+if (box) {
+  box.addEventListener('click', (evt) => {
+    evt.preventDefault()
+    box.remove()
+  })
+}
